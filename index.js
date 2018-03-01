@@ -43,7 +43,7 @@
 
   const $xhr = $.ajax({
     method: 'get',
-    url: 'https://api.myjson.com/bins/4sydf',
+    url: '/api.json',
     dataType: 'json'
   });
 
