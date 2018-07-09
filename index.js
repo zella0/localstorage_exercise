@@ -18,14 +18,15 @@
 
       if (favorites[car.id]) {
         $tdFav.text('❤️');
+        localStorage.setItem(car, car.id);
       }
       else {
         $tdFav.text('💔');
+          localStorage.removeItem(car);
       }
 
       $tdFav.on('click', () => {
         favorites[car.id] = !favorites[car.id];
-
         renderCars(cars);
       });
 
